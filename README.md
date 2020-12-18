@@ -7,7 +7,9 @@
 
 ## 提供コマンド
 
-- ShiftColorScheme: 引数の整数分だけカラースキームのリストをシフトする。引数を
+- ShiftColorScheme
+
+  引数の整数分だけカラースキームのリストをシフトする。引数を
   与えない場合はシフト先はランダムになる。選択されるカラースキームのリストは
   現在の背景色('background')に合わせてフィルタリングされる。例えば ``bg=dark``
   の時はリストにpeachpuff は現れない。逆に ``bg=light`` だと default が選ばれる
@@ -18,10 +20,14 @@
   ないカラースキームは常に dark と light 両方に対応しているものとみなされるため、
   うげっとなる切り替えが発生することになる。
 
-- ShiftColorSchemeForce: ShiftColorScheme とほぼ同じだが、背景色を考慮せずに全
+- ShiftColorSchemeForce
+
+  ShiftColorScheme とほぼ同じだが、背景色を考慮せずに全
   てのカラースキームから切り替え先を選択する。
 
-- ChangeBG: 背景色の light -- dark を ``syntax reset`` した上で切り替える。もし
+- ChangeBG
+
+  背景色の light -- dark を ``syntax reset`` した上で切り替える。もし
   切り替えたバックグラウンドに現在のカラースキームに対応できない場合は、dark は
   `default`、light は `g:default_light_colors_name` (初期値は peachpuff)に切
   り替わる。対応可能か否かの判別は autoload/backgrounds.vim の辞書 `s:t` による。
